@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    color: white;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.grande {
+    font-size: 24px;
+}
+.mediano {
+    font-size: 18px;
+}
+.pequeño {
+    font-size: 12px;
+}
+.muy_pequeño{
+    font-size: 8px;
+}
+
+.panel {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 25px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(200, 221, 220);
+    padding: 20px;
+}
+
+.lateral {
+    grid-row: span 5 / span 5;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    display: grid;
+    border-radius: 25px;
+    width: 280px;
+    margin-left: 20px;
+}
+/* PERFIL SUPERIOR */
+.div1 {
+    height: 205px;
+    background-color: rgba(60, 86, 85);
+    border-radius: 25px 25px 0px 0px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .usuario{
+        width: 60px;
+        border-radius: 50px;
+        border: 1px solid rgba(200, 157, 50);
+        padding: 2px;
+        margin: 5px;
+    }
+    .nombre{
+        color: rgba(200, 157, 50);
+        margin: 5px;
+    }
+    .correo{
+        color: rgba(200, 157, 50);
+        margin: 5px;
+    }
+}
+
+/* MENU LATERAL */
+.div2 {
+    grid-row: span 3 / span 3;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    background-color: rgba(67, 92, 91);
+    border-radius: 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0; /* Espacio interno vertical */
+}
+
+.contener_opcion {
+    width: 100%;
+    height: 50px;
+
+    border-radius: 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: left;
+    text-decoration: none;
+
+    .icon{
+        margin-left: 50px;
+        color: rgba(200, 157, 50);
+        width: 50px;
+    }
+    .opcion{
+        width: 70px;
+        color: rgba(200, 157, 50);
+    }
+}
+
+/* Efecto al pasar el ratón (Hover) */
+.contener_opcion:hover {
+    background-color: rgba(200, 221, 220, 0.162); /* Fondo muy suave del color principal */
+    padding-left: 12px; /* Ajusta el padding para compensar el borde */
+    border-radius: 25px 0px 0px 25px;
+}
+
+/* Estilo de la opción actualmente seleccionada o activa */
+.contener_opcion.activo {
+    background-color: rgba(200, 221, 220); /* Fondo más oscuro para indicar selección */
+    border-left: 3px solid rgba(60, 86, 85); /* Una barra de color en el borde izquierdo */
+    padding-left: 12px; /* Ajusta el padding para compensar el borde */
+    border-radius: 25px 0px 0px 25px;
+}
+
+/* Asegúrate de que el color del icono (SVG) sea consistente con el texto */
+.contener_opcion.activo svg path {
+    fill: rgba(200, 157, 50);
+}
+
+/* MAPA INFERIOR */
+.div3 {
+    grid-column-start: 1;
+    grid-row-start: 5;
+    background-color: rgba(67, 92, 91);
+    border-radius: 0px 0px 25px 25px;
+    height: 180px;
+
+    display: inline-flex;
+    flex-direction: column;
+    
+    justify-content: left;
+    .active{
+        margin-left: 30px;
+        color: rgba(200, 157, 50);
+    }
+    .usuarios{
+        height: 70px;
+        width: 100%;
+        position: relative;
+        .u1{
+            width: 40px;
+            position: absolute;
+            left: 60px;
+            border-radius: 50px;
+            border: 4px solid rgba(67, 92, 91);
+        }
+        .u2{
+            width: 40px;
+            position: absolute;
+            left: 85px;
+            border-radius: 50px;
+            border: 4px solid rgba(67, 92, 91);
+        }
+        .u3{
+            width: 40px;
+            position: absolute;
+            left: 110px;
+            border-radius: 50px;
+            border: 4px solid rgba(67, 92, 91);
+        }
+        .u4{
+            width: 40px;
+            position: absolute;
+            left: 135px;
+            border-radius: 50px;
+            border: 4px solid rgba(67, 92, 91);
+        }
+        .u5{
+            width: 40px;
+            position: absolute;
+            left: 160px;
+            border-radius: 50px;
+            border: 4px solid rgba(67, 92, 91);
+        }
+        .mas{
+            width: 40px;
+            position: absolute;
+            left: 185px;
+            border-radius: 50px;
+            border: 4px solid rgba(67, 92, 91);
+        }
+    }
+    .mapa_vacio{
+        margin-left: 50px;
+        width: 200px;
+    }
+}
+
+/* FICHA 1 */
+.div4 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    background-color: rgba(200, 157, 50);
+    border-radius: 25px;
+    background-image: url(fondo_ficha.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    .ficha1{
+        height: 90%;
+        width: 40%;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: 25px;
+    }
+    span{
+        margin: 15px 0px 0px 0px;
+    }
+    .imagen{
+        height: 100%;
+        position: relative;
+        .avion{
+            position: absolute;
+            width: 120px;
+            bottom: -20px;
+            left: 35px;
+            }
+        }
+}
+
+/* FICHA 2 */
+.div5 {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    background-color: rgba(60, 86, 85);
+    border-radius: 25px;
+    background-image: url(fondo_ficha.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    .ficha2{
+        height: 90%;
+        width: 40%;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: flex-start;  
+        margin-left: 25px;
+    }
+    span{
+        margin: 15px 0px 0px 0px;
+    }
+    .imagen{
+        height: 100%;
+        position: relative;
+        .avion{
+            position: absolute;
+            width: 120px;
+            bottom: -20px;
+            left: 35px;
+            }
+        }
+}
+
+/* FICHA 3 */
+.div6 {
+    grid-column-start: 4;
+    grid-row-start: 1;
+    background-color: rgba(60, 86, 85);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .ficha3{
+        height: 90%;
+        width: 40%;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: left;  
+    }
+    span{
+        margin: 15px 0px 0px 0px;
+    }
+    .mapa{
+    width: 150px;
+}
+}
+
+.informacion {
+    background-color: white;
+    border-radius: 25px;
+    color: rgba(60, 86, 85);
+}
+
+/* PANEL DE ULTIMOS VIAJES */
+.div7 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    padding: 20px; /* Añade padding interno al contenedor */
+
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    /* border: 1px solid black; */
+}
+th {
+    color: rgba(60, 86, 85);
+    text-align: left;
+    padding: 5px;
+    /* border: 1px solid rebeccapurple;  */
+}
+#th1{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+#th2 {
+    padding-left: 20px;
+    font-size: 8px;
+}
+#th3 {
+    padding-left: 20px;
+    font-size: 8px;
+}
+#perfil{
+    display: inline;
+    align-items: center;
+    justify-content: center;
+}
+#perfil, #name, #flight, #total_members, #price {
+    text-align: left;
+    font-size: 8px;
+}
+.foto-perfil{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin: 10px;
+    display: block;
+}
+#name{
+    font-size: 8;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+table thead th {
+    color: rgba(60, 86, 85, 0.7); /* Color grisáceo y sutil */
+    text-align: left;
+    padding: 10px 0px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    /* REMUEVE: border: 1px solid rebeccapurple; */
+}
+table tbody td {
+    padding: 5px 0px;
+    color: rgba(60, 86, 85);
+
+    font-size: 10px;
+    font-weight: 500;
+    vertical-align: middle; /* Alineación vertical de contenido */
+}
+
+table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.pasajeros-circulo {
+    /* Usamos Flexbox para centrar el contenido (el span.circulo) */
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center;     /* Centrado vertical */
+}
+
+/* 2. Estilo para el span que contiene el número (el círculo) */
+.circulo {
+    /* Dimensiones para la forma circular */
+    width: 30px;
+    height: 30px;
+    margin: 19px 0px;
+    /* Forma y color */
+    background-color: rgba(200, 157, 50); /* Fondo sutil/transparente */
+    border-radius: 50%; /* Hace que el cuadrado se convierta en círculo */
+    
+    /* Centrar el número dentro del círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Estilo del texto */
+    font-weight: 700;
+    color: white;
+    font-size: 14px;
+}
+
+.precio-ticket {
+    font-weight: 700;
+    color: rgba(60, 86, 85);
+}
+
+/* ESTADISTICAS */
+.div8 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+
+/* GRAFICA CIRCULAR */
+.div9 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 4;
+}
+
+/* GRAFICA DE ONDAS */
+.div10 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 4;
+}
+
+.div8, .div9, .div10 {
+    display: flex; /* Permite usar flexbox */
+    flex-direction: column; /* Apila el título y el canvas */
+    padding: 10px 50px 35px ;
+    position: relative; /* Necesario para que el canvas se ajuste */
+    max-height: 100%;
+    max-width: 100%;
+    flex-grow: 1;
+}

@@ -1,0 +1,169 @@
+<!-- HTML para platilla de vuelos -->
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="whit=device-whit, initial-scale=1.0">
+    <head>
+        <title>VUELOS</title>
+        <link rel="stylesheet" href="Vuelos.css">
+    </head>
+    <body>
+        <main>
+            
+            <div class="panel">
+                <div class="lateral">
+                    <!-- PERFIL, MENU, MAPA -->
+                    <div class="div1">
+                        <img class="usuario" src="usuario_avion.png" alt="">
+                        <span class="nombre pequeño">GAEL JAFET</span>
+                        <span class="correo pequeño">gaeljcruz1500@gmail.com</span>
+                    </div>
+                    <div class="div2">
+                        <a href="" class="dashboard opcion-menu contener_opcion">
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16"><path fill="#c89d32" d="m8 .798l7 4.667V15H9v-4.444H7V15H1V5.465zM3 6.535V13h2V8.556h6V13h2V6.535L8 3.202z"/></svg>
+                            </span>
+                            <span class="nombre-opcion opcion mediano">INICIO</span>
+                        </a>
+                        <a href="" class="flights opcion-menu contener_opcion">
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" stroke="#c89d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m14.5 6.5l3-2.9a2.05 2.05 0 0 1 2.9 2.9l-2.9 3L20 17l-2.5 2.55L14 13l-3 3v3l-2 2l-1.5-4.5L3 15l2-2h3l3-3l-6.5-3.5L7 4z"/></svg>
+                            </span>
+                            <span class="nombre-opcion opcion mediano">VUELOS</span>
+                        </a>
+                        <a href="" class="wallet opcion-menu contener_opcion">
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#c89d32" d="M20 7V5c0-1.103-.897-2-2-2H5C3.346 3 2 4.346 2 6v12c0 2.201 1.794 3 3 3h15c1.103 0 2-.897 2-2V9c0-1.103-.897-2-2-2m-2 9h-2v-4h2zM5 7a1.001 1.001 0 0 1 0-2h13v2z"/></svg>
+                            </span>
+                            <span class="nombre-opcion opcion mediano">BILLETERA</span>
+                        </a>
+                        <a href=""  class="reports opcion-menu contener_opcion">
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#c89d32" d="M5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h11l5 5v11q0 .825-.587 1.413T19 21zm2-4h10v-2H7zm0-4h10v-2H7zm8-4h4l-4-4zM7 9h5V7H7z"/></svg>
+                            </span>
+                            <span class="nombre-opcion opcion mediano">REPORTES</span>
+                        </a>
+                        <a href=""  class="statistics opcion-menu contener_opcion">
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#c89d32" d="M21 21H3v-2h18zM8 10H4v7h4zm6-4h-4v11h4zm6-3h-4v14h4z"/></svg>
+                            </span>
+                            <span class="nombre-opcion opcion mediano">ESTADISTICAS</span>
+                        </a>
+                        <a href=""  class="settings opcion-menu contener_opcion">
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512"><circle cx="256" cy="256" r="48" fill="#c89d32"/><path fill="#c89d32" d="m470.39 300l-.47-.38l-31.56-24.75a16.11 16.11 0 0 1-6.1-13.33v-11.56a16 16 0 0 1 6.11-13.22L469.92 212l.47-.38a26.68 26.68 0 0 0 5.9-34.06l-42.71-73.9a1.6 1.6 0 0 1-.13-.22A26.86 26.86 0 0 0 401 92.14l-.35.13l-37.1 14.93a15.94 15.94 0 0 1-14.47-1.29q-4.92-3.1-10-5.86a15.94 15.94 0 0 1-8.19-11.82l-5.59-39.59l-.12-.72A27.22 27.22 0 0 0 298.76 26h-85.52a26.92 26.92 0 0 0-26.45 22.39l-.09.56l-5.57 39.67a16 16 0 0 1-8.13 11.82a175 175 0 0 0-10 5.82a15.92 15.92 0 0 1-14.43 1.27l-37.13-15l-.35-.14a26.87 26.87 0 0 0-32.48 11.34l-.13.22l-42.77 73.95a26.71 26.71 0 0 0 5.9 34.1l.47.38l31.56 24.75a16.11 16.11 0 0 1 6.1 13.33v11.56a16 16 0 0 1-6.11 13.22L42.08 300l-.47.38a26.68 26.68 0 0 0-5.9 34.06l42.71 73.9a1.6 1.6 0 0 1 .13.22a26.86 26.86 0 0 0 32.45 11.3l.35-.13l37.07-14.93a15.94 15.94 0 0 1 14.47 1.29q4.92 3.11 10 5.86a15.94 15.94 0 0 1 8.19 11.82l5.56 39.59l.12.72A27.22 27.22 0 0 0 213.24 486h85.52a26.92 26.92 0 0 0 26.45-22.39l.09-.56l5.57-39.67a16 16 0 0 1 8.18-11.82c3.42-1.84 6.76-3.79 10-5.82a15.92 15.92 0 0 1 14.43-1.27l37.13 14.95l.35.14a26.85 26.85 0 0 0 32.48-11.34a3 3 0 0 1 .13-.22l42.71-73.89a26.7 26.7 0 0 0-5.89-34.11m-134.48-40.24a80 80 0 1 1-83.66-83.67a80.21 80.21 0 0 1 83.66 83.67"/></svg>
+                            </span>
+                            <span class="nombre-opcion opcion mediano">CONFIGURACION</span>
+                        </a>
+                    </div>
+                    <div class="div3">
+                        <span class="active">Active users</span>
+                        <div class="usuarios">
+                            <img src="user.png" alt="" class="u1">
+                            <img src="usuario_avion.png" alt="" class="u2">
+                            <img src="user.png" alt="" class="u3">
+                            <img src="usuario_avion.png" alt="" class="u4">
+                            <img src="user.png" alt="" class="u5">
+                            <img src="more.png" alt="" class="mas">
+                        </div>
+                        <img src="mapa_vacio.png" alt="" class="mapa_vacio">
+                    </div>
+                </div>
+
+                <!-- FICHA 1, 2 Y 3 -->
+                <div class="div4">
+                    <div class="ficha1">
+                        <span class="mediano">Total Flights 787</span>
+                        <span class="grande">$850</span>
+                    </div>
+                    <div class="imagen">
+                        <img class="avion" src="avion.png" alt="">
+                    </div>
+                </div>
+                <div class="div5">
+                    <div class="ficha2">
+                        <span class="mediano">Total Flights 787</span>
+                        <span class="grande">$850</span>
+                    </div>
+                    <div class="imagen">
+                        <img class="avion" src="avion.png" alt="">
+                    </div>
+                </div>
+                <div class="div6">
+                    <div class="ficha3">
+                        <span class="mediano">Total Flights 787</span>
+                        <span class="grande">850</span>
+                    </div>
+                    <img class="mapa" src="mapa_conexiones.png" alt="">
+                </div>
+
+                <!-- ULTIMOS VIAJES -->
+                <div class="div7 informacion">
+                    <h4 style="color: rgba(60, 86, 85); padding: 10px;">Últimos Viajes</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>Perfil</th>
+                <th></th>
+                <th>Vuelo</th>
+                <th>Pasajeros</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <img src="perfil1.jpeg" alt="John Doe" class="foto-perfil">
+                </td>
+                <td>
+                    John Doe <br>
+                    johndoe@gmail.com
+                </td>
+                <td>Qatar</td>
+                <td class="pasajeros-circulo">
+                    <span class="circulo">4</span>
+                </td>
+                <td class="precio-ticket">$1,200</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="perfil2.jpeg" alt="Jane Smith" class="foto-perfil">
+                </td>
+                <td>
+                    Martin Loeniss <br>
+                    martiloeniss@gmail.com
+                </td>
+                <td>Emirates</td>
+                <td class="pasajeros-circulo">
+                    <span class="circulo">2</span>
+                </td>
+                <td class="precio-ticket">$850</td>
+            </tr>
+        </tbody>
+    </table>
+                </div>
+
+                <!-- ESTADISTICAS -->
+                <div class="div8 informacion">
+                    <h4 style="color: rgba(60, 86, 85); padding: 10px;">Estadisticas</h4>
+                    <canvas id="graficaBarras"></canvas>
+                </div>
+
+                <!-- GRAFICA CIRCULAR -->
+                <div class="div9 informacion">
+                    <h4 style="color: rgba(60, 86, 85); padding: 10px;">Vuelos</h4>
+                    <canvas id="graficaCircular"></canvas>
+                </div>
+
+                <!-- GRAFICA DE ONDAS -->
+                <div class="div10 informacion">
+                    <h4 style="color: rgba(60, 86, 85); padding: 10px;">Concurrencia de Pasajeros</h4>
+                    <canvas id="graficaOndas"></canvas>
+                </div>
+            </div>
+    
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="vuelos.js"></script>
+    </body>
+</html>
